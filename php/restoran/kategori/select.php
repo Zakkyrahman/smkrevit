@@ -1,4 +1,6 @@
 <div style = "margin:auto; width:900px;">
+
+<h3> <a href="http://localhost/smkrevit/php/restoran/kategori/insert.php">TAMBAH DATA</a></h3>
 <?php
 
     require_once "../function.php";
