@@ -1,24 +1,31 @@
-<?php
+<?php 
 
-    function belajar(){
-        echo "saya belajar PHP";
-    }
 
-    function luaspersegi($p = 5,$1 = 3){
-        $luas = $p * $1;
+     function belajar(){
+          echo "Saya belajar";
+     }
 
-        echo $luas;
-    }
+     function luaspersegi(){
+          $p = 5;
+          $l = 4;
+          $luas = $p * $l;
 
-    function luas($p = 5, $1 = 3){
-        $luas = $p * $1;
+          echo $luas;
+     }
 
-        return $luas;
-    }
+     function luaspersegipanjang($p = 7, $l = 4){
+          $luas = $p * $l;
 
-    function output(){
-        return "belajar function";
-    }
+          return $luas;
+     }
 
-    echo luas(100,3) * 5;
+     function output(){
+          return 'belajar php';
+     }
+
+     echo luaspersegi();
+
+     echo '<br>'.output();
+
+     echo '<br>'.luaspersegipanjang(100,5);
 ?>
