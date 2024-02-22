@@ -1,3 +1,9 @@
+<?php
+    require_once "../dbcontroller.php";
+    $db = new DB;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +35,20 @@
                 <li class="nav-item"><a class="nav-link" href="?f=user&m=select">User</a></li>
             </ul>
             </div>
-            <div class="col-md-9"></div>
+            <div class="col-md-9">
+            <?php 
+                if (isset($_GET['f']) && isset($_GET['m'])) {
+                    $f =$_GET['f'];
+                    $m=$_GET['m'];
+
+                    $file = '../'.$f.'/'.$m.'.php';
+
+                    // require_once $file;
+                }
+            
+            ?>
+
+            </div>
         </div>
 
         <div class="row">

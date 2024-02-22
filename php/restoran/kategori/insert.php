@@ -1,24 +1,4 @@
-<form action="" method="post">
-    ketgori:
-    <input type="text" name="kategori">
-    <br>
-    <input type="submit" name="simpan" value="simpan">
-</form>
 
-<?php
+<h1>Select kategori</h1>
 
-    require_once "../function.php";
-
-    if(isset($_POST['simpan'])){
-        $kategori = $_POST['kategori'];
-
-        $sql = "INSERT INTO tblkategori VALUES ('','$kategori')";
-        $result = mysqli_query($koneksi,$sql);
-
-        // echo "Data sudah disimpan";
-        header("location:http://localhost/smkrevit/php/restoran/kategori/select.php");
-
-    }
-
-   
-?>
+<a href="?f=kategori&m=insert">Tambah Data</a>
