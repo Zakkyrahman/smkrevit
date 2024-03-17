@@ -10,7 +10,7 @@ class FrontController extends Controller
 {
     function index(){
         $kategoris = Kategori::all();
-        $menus = Menu::all();
+        $menus = Menu::paginate(3);
        return view('menu',[
         'kategoris'=>$kategoris,
         'menus'=>$menus

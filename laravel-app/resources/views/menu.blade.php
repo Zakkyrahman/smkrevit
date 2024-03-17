@@ -16,5 +16,8 @@
         </div>
       </div>
     @endforeach
+    <div>
+      {{ $menus->links() }}
+    </div>
 </div>
 @endsection
